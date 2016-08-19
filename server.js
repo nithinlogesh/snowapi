@@ -15,8 +15,8 @@ app.use(methodOverride());
 
 
 //Connect to mongodb
-mongoose.connect('mongodb://localhost/cloudsnow', function(err){
-//mongoose.connect('mongodb://calibertree:calibertree@52.39.209.42:27017/hellousers', function(err){
+//mongoose.connect('mongodb://localhost/cloudsnow', function(err){
+mongoose.connect('mongodb://calibertreem:calibertreem@52.39.209.42:27017/cloudsnow', function(err){
 
   if(err){
     return console.log(err);
@@ -64,7 +64,6 @@ app.post('/registerr',function(req,res){
 	})
 
 })
-
 
 
 
